@@ -10,13 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Color(red: 0.20, green: 0.60, blue: 0.86)
+            Color(red: 0.60, green: 0.20, blue: 0.86)
                 .ignoresSafeArea()
             VStack {
                 Image("funny-cat")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 200, height: 200, alignment: .top)
+                    .frame(width: 400, height: 400, alignment: .top)
                     .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                     .overlay(
                     Circle()
@@ -26,7 +26,8 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .bold()
                 Text("I am a new commit here")
-                    .font(.largeTitle)
+                    .font(.title2)
+                Text("New features coming soon...")
             }
         }
     }
