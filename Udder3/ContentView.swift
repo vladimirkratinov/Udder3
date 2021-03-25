@@ -25,6 +25,8 @@ struct ContentView: View {
                 Text("I'm funny Cat!")
                     .font(.largeTitle)
                     .bold()
+                Text("I am a new commit here")
+                    .font(.largeTitle)
             }
         }
     }
